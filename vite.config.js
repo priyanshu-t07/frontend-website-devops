@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/YOUR-REPO-NAME/',
+  base: '/frontend-website-devops/',
   build: {
     outDir: 'dist'
   }

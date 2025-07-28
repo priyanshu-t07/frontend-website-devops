@@ -1,0 +1,11 @@
+# _config.yml
+title: Frontend DevOps Site
+description: "Static site built with Vite, deployed via GitHub Pages & Jekyll"
+baseurl: ""                              # Empty for user/org pages
+url: "https://priyanshu-t07.github.io/frontend-website-devops"
+theme: jekyll-theme-minimal              # Choose any Pages-supported theme
+markdown: kramdown
+exclude:
+  - node_modules
+  - src               # Source JS; Vite will compile into docs/
+  - public            # Will be copied into docs/

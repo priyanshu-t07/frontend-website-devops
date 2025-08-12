@@ -1,0 +1,125 @@
+/* Theme Mode Colors */
+body[data-theme='dark'] {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+body[data-theme='light'] {
+  background: linear-gradient(to right, #f7f8f8, #d7dee5);
+  color: #111;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Glassmorphic Player Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(12px) saturate(150%);
+  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Center Player */
+.centered-player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 460px;
+  width: 90%;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Cover Image */
+.cover-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 16px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* Track Text */
+.track-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.track-artist {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+/* Buttons */
+button {
+  background-color: #1db954;
+  border: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.15s ease;
+}
+button:hover {
+  background-color: #1ed760;
+  transform: translateY(-1px);
+}
+button:active {
+  transform: translateY(1px);
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Volume */
+.volume-controls {
+  margin-top: 20px;
+}
+.volume-controls input[type='range'] {
+  width: 150px;
+}
+
+/* Playback Options */
+.playback-options {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Playlist */
+.playlist {
+  margin-top: 30px;
+  text-align: left;
+}
+.track-item {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.track-item:hover,
+.track-item.active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Waveform */
+.waveform {
+  margin: 20px 0;
+}
